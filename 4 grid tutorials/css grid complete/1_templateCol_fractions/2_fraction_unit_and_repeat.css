@@ -1,0 +1,31 @@
+/* 1fr is a fraction unit if we add 1fr 1fr 1fr then all columns will grow and shrink equally. */
+
+
+/* first example with fraction rule  */
+#parent{
+    display: grid;
+
+    /* this will grow and shrink all col equally  */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* this will grow and shrink middle col 2fractions  */
+    /* grid-template-columns: 1fr 2fr 1fr; */
+
+    /* grid repeat method works similar but it is easy to use  */
+    /* grid-template-columns: repeat(1 , 1fr); */
+    /* grid-template-columns: repeat(2 , 1fr); */
+    grid-template-columns: repeat(3 , 1fr);
+    /* grid-template-columns: repeat(4 , 1fr); */
+    /* grid-template-columns: repeat(5 , 1fr); */
+    /* grid-template-columns: repeat(6 , 1fr); */
+    grid-template-rows: 100px 100px;
+    grid-gap: 5px;
+}
+
+/* short hand method for grid template rows and columns  */
+#parent{
+    /* display: grid; */
+    /* first we add the repeat function for number 0f rows / repeat for number of columns  */
+
+    /* grid-template: repeat(2 ,100px) / repeat(3 , 1fr); */
+}

@@ -1,0 +1,11 @@
+#parent{
+    display: grid;
+    grid-gap: 5px;
+    
+    /* this code is good but leaves space at the end which is not good  */
+    /* grid-template-columns: repeat(auto-fit ,100px); */
+
+    /* so we use this method  */
+    grid-template-columns: repeat(auto-fit , minmax(100px , 1fr));
+    grid-template-rows: repeat(2 , 100px);
+}

@@ -1,0 +1,27 @@
+#parent {
+    display: grid;
+    grid-gap: .5vw;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 500px 100px;
+    grid-template-areas:
+    
+    /* the dots will represents the blank cells */
+    "h h h h h h h h h h h h"
+    "m m m c c c c c c c c ."
+    "m m m f f f f f f f f f"
+    ;
+}
+
+#header {
+    grid-area: h;
+}
+#menu{
+grid-area: m;
+}
+#content {
+grid-area: c;
+}
+
+#footer {
+    grid-area: f;
+}

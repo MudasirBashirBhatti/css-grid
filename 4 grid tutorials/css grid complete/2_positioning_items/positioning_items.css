@@ -1,0 +1,34 @@
+#parent{
+    display: grid;
+    grid-gap: .5vw;
+    /* we can use this  */
+    /* grid-template-columns: repeat(2,1fr); */
+
+    /* we use this to change the fraction for content  */
+    /* grid-template-columns: 1fr 4fr; */
+
+    /* 12 columns layout  */
+    grid-template-columns: repeat(12 , 1fr);
+    grid-template-rows: 10vw 20vw 5vw;
+}
+#header{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+
+    /* short hand method for above two lines  */
+    /* grid-column:1 / 3 ; */
+
+    /* we can also achieve this result by the line below  */
+    /* grid-column: 1 / span 2; */
+
+    /* the 3rd method is as  */
+    /* -1 shows the end column or nth column  */
+    /* this is original coloumn  */
+    grid-column: 1 / -1;  
+}
+#content{
+    grid-column: 2 / -1;
+}
+#footer{
+    grid-column: 1 / -1;
+}

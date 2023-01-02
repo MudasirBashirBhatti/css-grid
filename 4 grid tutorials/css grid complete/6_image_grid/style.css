@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+}
+#parent{
+    width: 90vw;
+    margin: auto;
+    /* overflow: hidden; */
+}
+img{
+    width: 100%;
+}
+div{
+    overflow: hidden;
+}

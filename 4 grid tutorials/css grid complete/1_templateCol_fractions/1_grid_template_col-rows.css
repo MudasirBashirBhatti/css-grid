@@ -1,0 +1,23 @@
+/* three columns and two row grid example  */
+#parent{
+    display: grid;
+    grid-template-columns: 100px auto 200px;  /* 100px-first col auto(center) 200px(3rd col)*/
+    grid-template-rows: 8vw 5vw;    /*8vw first-row  5vw second-row */
+    grid-gap: 5px;      /* this will add equal gap between rows and col */
+}
+
+
+/* two columns and three rows grid example  */
+#parent {
+    /* display: grid; */
+    /* grid-template-columns: 100px auto; */
+
+    /* 100px-first col auto(center) 200px(3rd col)*/
+    /* grid-template-rows:100px 200px 150px; */
+
+    /*8vw first-row  5vw second-row */
+
+    /* grid-gap: 5px; */
+    /* this will add equal gap between rows and col */
+}
+
